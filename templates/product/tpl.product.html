@@ -1,0 +1,19 @@
+<div class="product">
+    <div class="main-content" ng-class="{ 'pull-left' : activeView.oneColumn }">
+        <div class="product-pic" ng-click="showFullInfo($event)">
+            <a href="#">
+                <img ng-src="/img/{{productInfo.imgs[0]}}">
+            </a>
+        </div>
+        <div class="product-title" ng-click="showFullInfo($event)"><a href="#">{{productInfo.title}}</a></div>
+        <div><span class="product-price">{{productInfo.price}} грн.</span></div>
+        <div class="cart-button-wrapper">
+            <a href="#/cart" ng-disabled="(productInfo.amount === 0)" type="button" class="btn btn-primary" ng-click="addToCart($event)">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Купить
+            </a>
+        </div>
+    </div>
+    <div class="prod-short-descr" ng-if="activeView.oneColumn">
+        {{productInfo.shortDescr}} 
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="cart-content">
+    <div ng-if="!showProducts" class="empty-cart">Ваша корзина пуста.</div>
+    <div ng-if="showProducts" class="sum-title">Сумма</div>
+    <div class="product" ng-repeat="product in products track by $index">
+        <es-cart-product product="product" calc-final-sum="calcTotalSum()" renew-products-list="refreshProductsList(toCalcTotalSum)"></es-cart-product>
+    </div>
+    <div ng-if="showProducts" class="process-order">
+        <button ng-click="clearCart()" class="clear-cart btn btn-warning">Очистить корзину</button>
+
+        <div class="cart-payment-block">
+            <div class="cart-payment-info">
+                <span class="cart-total-title">Итого:</span><span class="cart-total-price">{{totalSum}} <span class="uah-sign">грн.</span></span> 
+            </div>    
+            <button type="submit" class="create-order btn btn-primary" ng-click="processOrder()">Оформить заказ</button>
+        </div>
+    </div>
+</div>

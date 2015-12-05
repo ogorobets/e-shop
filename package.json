@@ -1,0 +1,26 @@
+{
+  "name": "E-shop",
+  "version": "1.0.0",
+  "description": "e-shop",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/app.js -o js/bundle.js",
+    "watch": "watchify js/app.js -o js/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ogorobets@bitbucket.org/ogorobets/e-shop.git"
+  },
+  "author": "Oleksandr Gorobets",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-bootstrap-npm": "^0.14.3",
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "ui-router": "^0.2.15"
+  },
+  "browser": {
+    "ui.router": "./node_modules/ui-router/release/angular-ui-router.min.js"
+  }
+}

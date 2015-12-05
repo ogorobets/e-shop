@@ -1,0 +1,18 @@
+<div class="cart-product clearfix">
+    <div class="remove-product-block">
+        <a href="#" ng-click="removeProduct($event)"><span class="glyphicon glyphicon-remove-circle"></span></a>
+    </div>
+    <div class= "cart-img">
+        <img ng-src="/img/{{product.imgs[0]}}">
+    </div>
+    <div class="product-info"> 
+        <div class="product-title">{{product.title}}</div>
+        <span class="product-price">{{product.price}} <span class="uah-sign">грн.</span></span> 
+        <span class="product-sum">{{sum}} <span class="uah-sign">грн.</span></span>
+        <div class="cart-amount">
+            <a href="#" ng-click="decreaseAmount($event)"><span class="glyphicon glyphicon-minus"></span></a> 
+            <input ng-model="productAmount" class="form-control product-amount" type="text"></input> 
+            <a href="#" ng-click="increaseAmount($event)"><span class="glyphicon glyphicon-plus"></span></a>
+        </div>
+    </div>
+</div>

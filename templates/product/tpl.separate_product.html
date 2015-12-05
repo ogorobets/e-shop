@@ -1,0 +1,35 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{productInfo.title}}</h3>
+</div>
+<div class="modal-body clearfix">
+    <div class="product">
+        <div class="product-pic pull-left">
+            <img ng-src="/img/{{productInfo.imgs[0]}}">
+        </div>
+        <div>
+            <div class="buy-n-amount-block">
+                <div class="buy-block">
+                    <div><span class="product-price">{{productInfo.price}} грн.</span></div>
+                    <div class="cart-button-wrapper">
+                        <a href="#/cart" ng-disabled="(productInfo.amount === 0)" type="button" class="btn btn-primary" ng-click="addToCart($event)">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Купить
+                        </a>
+                    </div>
+                </div>
+                <div class="amount-block">
+                    Осталось:
+                    <div><span class="product-amount">{{productInfo.amount}}</span> шт.</div>
+                </div>
+            </div>
+
+            <div class="prod-short-descr">
+                {{productInfo.shortDescr}} 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-default" type="button" ng-click="close()">Закрыть</button>
+</div>
+
+
