@@ -4,7 +4,7 @@ Simple e-shop
 <p>
 	Run 'npm install'<br/> 
 </p>
-<h2>Starting app<h2>
+<h2>Starting app</h2>
 <p>
 	1. Install python (if you don't have one now) <br/> 
 	2. Open a terminal and go to project folder <br/> 
