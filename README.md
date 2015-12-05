@@ -1,6 +1,6 @@
 # e-shop
 Simple e-shop
-<h2>Installation<h2>
+<h2>Installation</h2>
 <p>
 	Run 'npm install'<br/> 
 </p>
