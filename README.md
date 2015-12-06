@@ -1,6 +1,6 @@
 # e-shop
 Simple e-shop. E-shop has a list of goods. You are able to sort goods by quantity, price, 
-date of product issue. E-shop has a shopping cart where you can put products.
+date of product issue, by product title by ABC. E-shop has a shopping cart where you can put products.
 A list of goods has to view options: three columns and 1 column.
 You can go to shopping cart and see a list of product chosen. You can remove all chosen goods at once or
 one by one. If a product is present in a cart then available amount of goods decreases. If some product is 
