@@ -11,6 +11,8 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
     background: -moz-linear-gradient(top, #fff, #fff 65%, #f3f3f3);
     background: linear-gradient('to bottom', #fff, #fff 65%, #f3f3f3);
     height: 78px;
+    position: relative;
+    z-index: 2;
 
     h1 {
         margin: 0;
@@ -55,6 +57,12 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 
 .goods-main-content {
     min-width: 600px;
+    padding-top: 78px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    margin-top: -78px;
 }
 
 .product-wrapper {
@@ -284,4 +292,9 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
     height: 120px;
     text-align: center;
     padding-top: 51px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: -120px;
+    z-index: 2
 }
