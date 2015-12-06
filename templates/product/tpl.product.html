@@ -1,5 +1,5 @@
-<div class="product">
-    <div class="main-content" ng-class="{ 'pull-left' : activeView.oneColumn }">
+<div class="product" ng-class="{ 'one-column' : activeView.oneColumn }">
+    <div class="main-content" ng-class="{ 'col-xs-2' : activeView.oneColumn }">
         <div class="product-pic" ng-click="showFullInfo($event)">
             <a href="#">
                 <img ng-src="/img/{{productInfo.imgs[0]}}">

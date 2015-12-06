@@ -145,6 +145,13 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
     }
 }
 
+.product.one-column {
+    .main-content {
+        min-width: 320px;
+    }
+
+}
+
 .view-options {
     margin: 15px;
     height: 48px;

@@ -5908,6 +5908,9 @@ button.close {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+.product.one-column .main-content {
+  min-width: 320px; }
+
 .view-options {
   margin: 15px;
   height: 48px;
